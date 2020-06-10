@@ -1,12 +1,11 @@
 #include <stdio.h>
-int main(void)
 
 /**
  * main - size of evaluates the size of a variable
  *
  * Return: Always 0 (Success)
  **/
-
+int main(void)
 {       int intType;
 	float floatType;
 	longint longintType;
