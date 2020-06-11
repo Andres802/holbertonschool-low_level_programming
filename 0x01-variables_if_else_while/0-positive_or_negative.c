@@ -1,4 +1,4 @@
-/**
+ /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
@@ -18,17 +18,17 @@ int main(void)
 	/* if the number is greater than 0: is positive*/
 	if (n > 0)
 	{
-		printf("%d is positive\n" n);
+		printf("%d is positive\n", n);
 	}
 	/* if the number is 0: is zero*/
 	else if (n == 0)
 	{
-		printf("%d is zero\n" n);
+		printf("%d is zero\n", n);
 	}
 	/* if the number is less than 0: is negative*/
 	else if (n < 0)
 	{
-		printf("%d is negative\n" n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
