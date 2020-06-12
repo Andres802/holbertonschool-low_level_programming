@@ -7,7 +7,7 @@
 int main(void)
 {
 int i = 0;
-int ch = 'a'
+int ch = 'a';
 
 	for (i = 48; i <= 57; i++)
 	putchar(i);
