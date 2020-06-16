@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * main - last digit
+ * main - program that print Holberton, followed by a new line
  *
  * Return: Always 0 (Success)
  */
