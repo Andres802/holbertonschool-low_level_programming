@@ -1,5 +1,4 @@
 ```html
-
 <p align="center">
   <img src="https://www.holbertonschool.com/holberton-logo.png" width="360"/>
    <h1 align="center">Week #0</h1>
