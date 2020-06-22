@@ -1,14 +1,15 @@
 
 ```html
+<prev>
 <p align="center">
   <img src="https://www.holbertonschool.com/holberton-logo.png" width="360"/>
    <h1 align="center">Week #0</h1>
     <br>
 
-<h1 align="center">System engineering & DevOps - Bash</h1>
+<h1 align="center">Low Level Programming & Algorithm - C Programming Language </h1>
 
 
-This project is about Basic shell commands, giving permissions to files and directories, redirection and the expansion of the variables.
+This project is about Low level Programming & Algorithm, using the C Programming Language to make scripts, this is to introduce us to the magic world of coding.
 
 ---
 ### :file_folder:- Directories 
@@ -16,10 +17,10 @@ This project is about Basic shell commands, giving permissions to files and dire
 #|Directory|Description
 ---|---|---
 1|[README.md](./README.md)| ...
-2|[0x00-shell_basics](./0x00-shell_basics)|Basic commands of shell
-3|[0x01-shell_permissions](./0x01-shell_permissions)|How to stablish permissions
-4|[0x02-shell_redirections](./0x02-shell_redirections)| I/O Redirections
-5|[0x03-shell_variables_expansions](./0x03-shell_variables_expansions)| Variables & Expansions
+2|[0x00-hello_world](./0x00-hello_world)|Introducing to C Language, Hello World
+3|[0x01-variables_if_else_while](./0x01-variables_if_else_while)|Variables and Functions if, while and for
+4|[0x02-](./0x02-shell_redirections)| 
+
 
 
 
@@ -46,8 +47,5 @@ This project is about Basic shell commands, giving permissions to files and dire
 </p>
 <p align="center">
 <b>Holberton School - Colombia<b><br>
-</p>
-<p align="center">
-<b>June, 2020.<b>
-</p>
+</pre>
 ```
