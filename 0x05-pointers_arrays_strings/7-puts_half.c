@@ -5,16 +5,16 @@
  */
 void puts_half(char *str)
 {
-/** this is to find the size of the string**/
-int counter = 0;
-int poscentral;
+/** this is to find the size of the string **/
+	int counter = 0;
+	int poscentral;
 
-while (str[counter] != '\0')
-{
+	while (str[counter] != '\0')
+	{
 	counter++;
-}
+	}
 /** the last position **/
-poscentral = counter / 2;
+	poscentral = counter / 2;
 	while (str[poscentral] != '\0')
 	{
 		_putchar(str[poscentral]);
