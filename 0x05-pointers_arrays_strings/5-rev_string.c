@@ -9,9 +9,9 @@ void rev_string(char *s)
 	int i, j; temp;
 
 	i = 0;
-	while (s[i] =! '\0')
+	while (s[i] != '\0')
 	{
-		i ++;
+		i++;
 	}
 	i--; /** get the last position of the array before null */
 	j = 0;
