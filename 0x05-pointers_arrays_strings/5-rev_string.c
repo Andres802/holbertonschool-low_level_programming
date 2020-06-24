@@ -1,9 +1,9 @@
-#include "holberton.h"
-
+#include"holberton.h"
 /**
- * print_rev - print a string in reverse
+ * rev_string - print a string in reverse
  * @s: char array string type
- */
+ * Return: Always 0 (Success)
+*/
 void rev_string(char *s)
 {
 	int i, j, temp;
@@ -13,7 +13,7 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	i--; /** get the last position of the array before null */
+	i--; /** get the last position of the array before null **/
 	j = 0;
 	while (j < i)
 	{
