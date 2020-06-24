@@ -11,7 +11,7 @@ void puts_half(char *str)
 
 	while (str[counter] != '\0')
 	{
-	counter++;
+		counter++;
 	}
 /** the last position **/
 	poscentral = counter / 2;
