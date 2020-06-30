@@ -1,5 +1,10 @@
-#include <stdio.h>
-
+#include "holberton.h"
+/**
+ * _strspn - function that gets the length of a prefix substring.
+ * @s: source string
+ * @accept:  string that need to match with source
+ * Return: number of bytes matches.
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
