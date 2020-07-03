@@ -11,19 +11,22 @@ if (n <= 1)
 return (0);
 else
 
-	return (primefactor(n, n - 1));
+	return (_prime(n, n - 1));
 }
 
-int primefactor(int b, int a)
+/**
+ * _prime - function that checks if is prime or not.
+ * @a: integer
+ * @b: integer
+ * Return: returns 1 if integer otherwise return 0
+ */
+
+int _prime(int b, int a)
 {
-	if (a == 1 )
+	if (a == 1)
 	return (a);
 	if (b % a == 0)
-	 return (0);
-	 else
-	 
-		 return (primefactor(b, a - 1));
-
-	 
-	 
+	return (0);
+	else
+	return (_prime(b, a - 1));
 }
