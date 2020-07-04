@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 /**
- * fib - a function that prints fib numbers
+ * main - a function that prints fib numbers
  *
- * Return: x10 a-z
+ * Return: Always 0
  */
-int fib(void)
+int main(void)
 {
 	long  anterior = 1;
 	long   actual = 2;
