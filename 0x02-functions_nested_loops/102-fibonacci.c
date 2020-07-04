@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 /**
-* main - a function that prints first 50 fibinacci numbers
-*
-*Return : Always 0
-*/
-int main(void)
+ * fib - a function that prints fib numbers
+ *
+ * Return: x10 a-z
+ */
+int fib(void)
 {
 	long  anterior = 1;
 	long   actual = 2;
