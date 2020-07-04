@@ -12,10 +12,10 @@ int main(void)
 	long   actual = 2;
 	int  i;
 
-	printf("%i ,", anterior);
+	printf("%lu ,", anterior);
 	for (i = 2; i <= 50; i++)
 	{
-		printf("%i", actual);
+		printf("%lu", actual);
 		if (i != 50)
 		{
 			printf(", ");
