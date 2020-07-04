@@ -10,7 +10,7 @@ int main(void)
 	for (i = 2; i <= 50; i ++)
 	{
 		printf("%lld", actual );
-		if (i!= 30) 
+		if (i!= 50) 
 		{
 			printf(", ");
 		}
