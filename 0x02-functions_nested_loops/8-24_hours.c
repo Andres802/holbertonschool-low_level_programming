@@ -2,7 +2,7 @@
 /**
  *jack_bauer - prints every minute of the say of Jack Bauer
  *
- *Return: Alaways0
+ *Return: Alaways 0
  */
 void jack_bauer(void)
 {
