@@ -7,10 +7,10 @@ int main(void)
 	int  i;
 
 	printf("%lld ,", anterior );
-	for (i = 2; i <= 51; i ++)
+	for (i = 2; i <= 52; i ++)
 	{
 		printf("%lld", actual );
-		if (i!= 51) 
+		if (i!= 52) 
 		{
 			printf(", ");
 		}
