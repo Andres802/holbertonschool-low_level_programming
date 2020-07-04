@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	long  anterior = 1;
-	long   actual = 2;
+	long int  anterior = 1;
+	long int  actual = 2;
 	int  i;
 
-	printf("%lu ,", anterior);
+	printf("%ld ,", anterior);
 	for (i = 2; i <= 50; i++)
 	{
-		printf("%lu", actual);
+		printf("%ld", actual);
 		if (i != 50)
 		{
 			printf(", ");
