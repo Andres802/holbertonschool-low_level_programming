@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	p = malloc(len + 1 * (sizeof(char)));
 	if (p == '\0')
 	return (0);
-	for (; recorrido < len; recorrido++)
+	for (; recorrido <= len; recorrido++)
 	p[recorrido] = str[recorrido];
 	return (p);
 }
@@ -34,7 +34,7 @@ int _strlen(char *s)
 	int length;
 
 	length = 0;
-	for (length = 0; length < *s - 1; length++)
+	for (length = 0; length <= *s; length++)
 	s++;
 	return (length);
 }
