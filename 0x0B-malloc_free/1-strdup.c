@@ -20,9 +20,11 @@ char *_strdup(char *str)
 	p = malloc(len + 1 * (sizeof(char)));
 	if (p == '\0')
 	return (0);
-	for ( ; recorrido <= len; recorrido++)
+	for (recorrido = 0; str[recorrido] != 0; recorrido++)
+	{
 	p[recorrido] = str[recorrido];
-	p[recorrido] = str[recorrido];
+	}
+	p[recorrido] = '\0';
 	return (p);
 }
 /**
