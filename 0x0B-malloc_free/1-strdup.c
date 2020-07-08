@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	if (str == '\0')
 	return (0);
 	len = _strlen(str);
-	p = malloc(len + 1 * (sizeof(char)));
+	p = malloc(len + 1 * sizeof(char));
 	if (p == '\0')
 	return (0);
 	for (; recorrido < len; recorrido++)
