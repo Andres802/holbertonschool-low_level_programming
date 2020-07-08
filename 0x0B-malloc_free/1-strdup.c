@@ -17,14 +17,14 @@ char *_strdup(char *str)
 	if (str == '\0')
 	return (0);
 	len = _strlen(str);
-	p = malloc(len + 1 * (sizeof(char)));
+	p = malloc(len + 1 * sizeof(char));
 	if (p == '\0')
 	return (0);
-	for (recorrido = 0; str[recorrido] != 0; recorrido++)
+	for ( ; str[recorrido] != 0;  recorrido++)
 	{
-	p[recorrido] = str[recorrido];
-	}
-	p[recorrido] = '\0';
+		p[recorrido] = str[recorrido];
+		}
+		p[recorrido] = '\0';
 	return (p);
 }
 /**
@@ -35,9 +35,8 @@ char *_strdup(char *str)
 int _strlen(char *s)
 {
 	int length;
-
-	length = 0;
-	for (length = 0; length <= *s; length++)
-	s++;
-	return (length);
+		length = 0;
+		for (length = 0; length <= *s; length++)
+		s++;
+		return (length);
 }
