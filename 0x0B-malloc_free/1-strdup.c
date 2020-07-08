@@ -22,6 +22,7 @@ char *_strdup(char *str)
 	return (0);
 	for (; recorrido < len; recorrido++)
 	p[recorrido] = str[recorrido];
+	p[recorrido] = str[recorrido];
 	return (p);
 }
 /**
