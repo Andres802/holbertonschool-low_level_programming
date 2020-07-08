@@ -22,7 +22,6 @@ char *_strdup(char *str)
 	return (0);
 	for (; recorrido < len; recorrido++)
 	p[recorrido] = str[recorrido];
-	p[recorrido] = str[recorrido];
 	return (p);
 }
 /**
@@ -35,7 +34,7 @@ int _strlen(char *s)
 	int length;
 
 	length = 0;
-	for (length = 0; length < *s; length++)
+	for (length = 0; length < *s - 1; length++)
 	s++;
 	return (length);
 }
