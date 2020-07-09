@@ -12,11 +12,11 @@
 void *malloc_checked(unsigned int b)
 {
 	/** declare my pointer to reserve int to the size of my argument*/
-	void *newptr = 0;
+	void *newptr = NULL;
 
 	newptr = malloc(b);
 	/** Next I do check if new pointer fails*/
-	if (newptr == 0)
+	if (newptr == NULL)
 	{
 		exit(98);
 	}
