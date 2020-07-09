@@ -1,7 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 /**
  * *malloc_checked- Write a function
  * that allocates memory using malloc function
