@@ -7,7 +7,6 @@
  * that allocates memory using malloc function
  * @b: unsigned int parameter
  * Return: newptr
- * /
  */
 void *malloc_checked(unsigned int b)
 {
