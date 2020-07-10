@@ -26,6 +26,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		ptr[x] = 0;
 	}
 	/** casting the ptr*/
-	ptr = (void*) ptr;
+	ptr = (void *) ptr;
 	return (ptr);
 }
