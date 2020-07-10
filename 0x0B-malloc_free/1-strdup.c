@@ -36,7 +36,7 @@ int _strlen(char *s)
 {
 	int length;
 		length = 0;
-		for (length = 0; length <= *s; length++)
+		for (length = 0; length < *s; length++)
 		s++;
 		return (length);
 }

@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 	/** check if my ptr is on succes */
 	if (ptr2 == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	/** opening spaces in the height for the width in each height*/
 	for (x = 0 ; x < height ; x++)
