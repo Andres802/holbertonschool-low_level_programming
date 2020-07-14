@@ -18,7 +18,7 @@ int c;
 dog_t *new_dog = malloc(sizeof(dog_t));
 /** check if the new dog function is a null values or it doea have vales*/
 if (new_dog == NULL)
-return (NULL);
+return (new_dog);
 /*
 * Lets check the size of the new name and new
 * owner with our declared vaeiables
@@ -33,32 +33,21 @@ for (len_2 = 0; owner[len_2]; len_2++)
  * of the variable, in other word set new_dog to new vaules
  * plus 1 extra space to each for the \0 value at the en of the string
  */
-
-new_dog = malloc(sizeof(dog_t));
-if (new_dog == '\0')
-{
-	return (0);
-}
 new_dog->name = malloc((len_1 + 1) * sizeof(char));
-if (new_dog->name == NULL)
+new_dog->owner = malloc((len_2 + 1) * sizeof(char));
+if (new_dog->name == NULL || new_dog->owner == NULL)
 {
 	free(new_dog->name);
-	return (0);
-}
-new_dog->owner = malloc((len_2 + 1) * sizeof(char));
-if (new_dog->owner == NULL)
-{
 	free(new_dog->owner);
 	free(new_dog);
-	return (0);
+	return (NULL);
 }
 /*
  * so basically we do follow the malloc logical intructions
  * we do have to check if the allocation of memory was done
  * right so we check
  * if they are NULL byte free
- */
-/*
+ *
  * Once the memory is allocated correctly we have to start
  * copying the new variables
  * to new_dog with a for loop
