@@ -1,9 +1,9 @@
 #include "function_pointers.h"
 /**
  * int_index - check conditios is true with the number of the position of array
- * so basically seacrh fot the integer 
+ * so basically seacrh fot the integer
  * @array: This is the pointer of the array
- * @acmp: the pointer to the function
+ * @cmp: the pointer to the function
  * @size: Size of the array
  * Return: Nothing because is a void function
  */
