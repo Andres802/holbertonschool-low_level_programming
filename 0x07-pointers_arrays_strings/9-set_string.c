@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * _strstr - function that locates a substring
+ * set_string - function that function that sets the value of a pointer to a char
  * @s: pointer to a char s0
  * @to: pointer to a char s1
- * Return: Always 0
+ * Return: void
  */
 void set_string(char **s, char *to)
 {
-*s = to;
+	*s = to;
 }

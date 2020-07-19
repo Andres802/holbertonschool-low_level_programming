@@ -22,7 +22,10 @@ int main(int argc, char **argv)
 		{
 			for (j = 0; argv[i][j] != 0; j++)
 			{
-				if (argv[i][j] > 47 && argv[i][j] < 58)
+				/**printf("prueba1 i  %c\n", argv[i][j]);*/
+				/**printf("prueba2 j  %s\n", argv[j]);*/
+
+				if (argv[i][j] > 47 && argv[i][j] < 58) 
 				{
 					continue;
 				}

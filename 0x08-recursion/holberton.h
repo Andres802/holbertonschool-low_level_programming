@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef _HOLBERTON_H
+#define _HOLBERTON_H
 
 int _putchar(char c);
 void _puts_recursion(char *s);
@@ -11,6 +11,9 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int _prime(int b, int a);
+int isPalRec(char *str[], int p, int e);
+int is_palindrome(char *str[]);
+
 
 
 #endif
