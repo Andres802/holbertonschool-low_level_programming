@@ -19,8 +19,9 @@ struct list_s *next;
  * @next: next node
  */
 
-
 size_t print_list(const list_t *h);
 int _putchar(char c);
 void __attribute__ ((constructor)) premain();
+size_t list_len(const list_t *h);
+
 #endif
