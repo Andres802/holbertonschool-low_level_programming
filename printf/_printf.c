@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 
 	if (!printf_valid(format))
 	{
-		_putchar('e');
+		_putchar('j');
 			return (-1);
 	}
 	for (i = 0; format[i] != '\0';  i++)

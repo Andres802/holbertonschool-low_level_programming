@@ -5,7 +5,6 @@
  * 
  * 
  */
-
 int printfchar(char *c, int count)
 {
 	_putchar(c[0]);
