@@ -8,7 +8,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newNode;
-	list_t *last = *head;
+	list_t *temp = *head;
 
 	if (str == NULL)
 	return (NULL);
@@ -18,14 +18,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	newNode->str = strdup(str);
 	newNode->len = _strlen(str);
 	newNode->next = NULL;
+	if (*head == NULL)
 	{
-		if (*head == NULL)
 		*head = newNode;
 		return (newNode);
 	}
-	while (last->next != NULL)
-		last = last->next;
-		last->next = newNode;
+	while (temp->next != NULL)
+		temp = temp->next;
+		temp->next = newNode;
 		return (newNode);
 }
 /**
