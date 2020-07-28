@@ -2,8 +2,8 @@
 /**
  * insert_nodeint_at_index - this fuction will add a function at given position
  * @head: the beggining of the linked list head
- * @idx:
- * @n:
+ * @idx: index position
+ * @n: new value to enter into de linked list
  * Return: the head with the value Null
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -13,12 +13,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int size;
 	unsigned int index = 0;
 
-	if (!*head || head == NULL) 
+	if (!*head || head == NULL)
 	{
-        return (NULL);
-    }
+		return (NULL);
+		}
 	size = listint_len2((*head));
-    newNode = malloc(sizeof(listint_t));
+	newNode = malloc(sizeof(listint_t));
 	if (newNode == NULL)
 		return (NULL);
 	if (idx > size)
@@ -28,7 +28,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	newNode->n = n;
 	*head = newNode;
 		return (newNode);
-	while (index < (idx -1))
+	while (index < (idx - 1))
 	{
 		index++;
 		newNodito = newNodito->next;
