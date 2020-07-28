@@ -8,7 +8,7 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *headaux;
+	listint_t *newNodito;
 	listint_t *newnode;
 	unsigned int size;
 
@@ -28,20 +28,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = newnode;
 		return (newnode);
 	}
-	/* usea de auxiliar */
-	headaux = *head;
+	newNodito = *head;
 	/* if index is different to the position */
 	/* counter size keeps running and headaux moves to the next node */
-	while (headaux != NULL && size != idx - 1)
+	while (newNodito != NULL && size != idx - 1)
 	{
 		size++;
-		headaux = headaux->next;
+		newNodito = newNodito->next;
 	}
 	/* if index and size are equal and non NULL */
-	if (size == idx - 1 && headaux != NULL)
+	if (size == idx - 1 && newNodito!= NULL)
 	{
-		newnode->next = headaux->next;
-		headaux->next = newnode;
+		newnode->next = newNodito->next;
+		newNodito->next = newnode;
 		return (newnode);
 	}
 	free(newnode);
