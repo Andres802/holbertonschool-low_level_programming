@@ -8,50 +8,42 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *newNode = NULL;
-	listint_t *newNodito = *head;
+	listint_t *headaux;
+	listint_t *newnode;
 	unsigned int size;
-	unsigned int index = 0;
 
-	if (!*head || head == NULL)
+	size = 0;
+	/* allocate memory for the newnode */
+	newnode = malloc(sizeof(listint_t));
+	/* task condition */
+	if (newnode == NULL)
+		return (NULL);
+	/* n keeps being the data of the new node */
+	newnode->n = n;
+	/*  given the case, if index is cero then newnode is equal to head */
+	/* and return newnode in head of the list */
+	/*f (idx == 0)
 	{
-		return (NULL);
-		}
-	size = listint_len2((*head));
-	newNode = malloc(sizeof(listint_t));
-	if (newNode == NULL)
-		return (NULL);
-	if (idx > size)
-		return (NULL);
-	if (idx == 0)
-	newNode->next = *head;
-	newNode->n = n;
-	*head = newNode;
-		return (newNode);
-	while (index < (idx - 1))
+		newnode->next = *head;
+		*head = newnode;
+		return (newnode);
+	}*/
+	/* usea de auxiliar */
+	headaux = *head;
+	/* if index is different to the position */
+	/* counter size keeps running and headaux moves to the next node */
+	while (headaux != NULL && size != idx - 1)
 	{
-		index++;
-		newNodito = newNodito->next;
+		size++;
+		headaux = headaux->next;
 	}
-	newNode->n = n;
-	newNode->next = newNodito->next;
-	newNodito->next = newNode;
-	return (newNode);
-}
-/**
- * listint_len2 - return the lenght of a list
- * @h: list
- *
- * Return: number of elements in the list
- */
-unsigned int listint_len2(listint_t *h)
-{
-	unsigned int i;
-
-	while (h)
+	/* if index and size are equal and non NULL */
+	if (size == idx - 1 && headaux != NULL)
 	{
-		h = h->next;
-		i++;
+		newnode->next = headaux->next;
+		headaux->next = newnode;
+		return (newnode);
 	}
-	return (i);
+	free(newnode);
+	return (NULL);
 }
