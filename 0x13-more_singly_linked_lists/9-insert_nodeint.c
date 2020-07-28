@@ -22,12 +22,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	newnode->n = n;
 	/*  given the case, if index is cero then newnode is equal to head */
 	/* and return newnode in head of the list */
-	/*f (idx == 0)
+	if (idx == 0)
 	{
 		newnode->next = *head;
 		*head = newnode;
 		return (newnode);
-	}*/
+	}
 	/* usea de auxiliar */
 	headaux = *head;
 	/* if index is different to the position */
