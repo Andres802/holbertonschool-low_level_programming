@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * get_bit - Function that returns the value of a bit at a given index
+ * set_bit - Function that changes the bit for 1 in the respctive index
  * @n: variable
  * @index: variable
  * Return: Always 0.
