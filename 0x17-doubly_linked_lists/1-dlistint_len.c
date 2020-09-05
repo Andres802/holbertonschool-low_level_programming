@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_dlistint - Print all elemnts of the linked list
+ *dlistint_len - Print all elemnts of the linked list
  *@h: Double linked lists
  * Return: The number of nodes in counter
  */
