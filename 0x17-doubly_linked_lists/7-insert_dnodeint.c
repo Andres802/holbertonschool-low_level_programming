@@ -22,7 +22,7 @@ while (idx > 1)
 		return (NULL);
 	idx--;
 }
-if ( newnode->next == NULL)
+if (newnode->next == NULL)
 {
 	return (add_dnodeint_end(h, n));
 }
@@ -34,7 +34,7 @@ if (newNodito == NULL)
 newNodito->n = n;
 newNodito->prev = newnode;
 newNodito->next = newnode->next;
-newnode->next->prev =newNodito;
+newnode->next->prev = newNodito;
 newnode->next = newNodito;
 return (newNodito);
 }
