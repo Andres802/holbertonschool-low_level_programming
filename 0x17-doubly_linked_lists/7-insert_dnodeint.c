@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * insert_nodeint_at_index - this fuction will add a function at given position
- * @head: the beggining of the linked list head
+ * insert_dnodeint_at_index -  add a node at  a given position
+ * @h: the beggining of the linked list head
  * @idx: index position
  * @n: new value to enter into de linked list
  * Return: the head with the value Null
@@ -24,8 +24,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	/* and return newnode in head of the list */
 	if (idx == 0)
 	{
-		newnode->next = (*h);
-		(*h) = newnode;
+		newnode->next = *h;
+		*h = newnode;
 		return (newnode);
 	}
 	newNodito = *h;
@@ -37,7 +37,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		newNodito = newNodito->next;
 	}
 	/* if index and size are equal and non NULL */
-	if (size == idx - 1 && newNodito!= NULL)
+	if (size == idx - 1 && newNodito != NULL)
 	{
 		newnode->next = newNodito->next;
 		newNodito->next = newnode;
