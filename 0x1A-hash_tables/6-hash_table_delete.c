@@ -12,12 +12,12 @@ void hash_table_delete(hash_table_t *ht)
 {
 	unsigned int i = 0;
 	hash_node_t *ptr = NULL, *ahead = NULL;
-
+	/* i < que index (1024) */
 	while (i < ht->size)
-	{
+	{	/* assign the position of arrai[i] to ptr*/
 		ptr = ht->array[i];
 		while (ptr)
-		{
+		{	/* free memore of the nodes na dlinked list*/
 			ahead = ptr->next;
 			free(ptr->value);
 			free(ptr->key);
@@ -26,6 +26,7 @@ void hash_table_delete(hash_table_t *ht)
 		}
 		i++;
 	}
+	/* free memory of the hash tanle*/
 	free(ht->array);
 	free(ht);
 }
