@@ -16,7 +16,7 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	/*index start at 0 < size array 1024*/
 	while (index < ht->size)
-	{	/* if atposition index # is empty continue until it find somethng*/
+	{	/* if at position index # is empty continue until it find somethng*/
 		if (ht->array[index] == NULL)
 		{
 			index++;
@@ -32,10 +32,10 @@ void hash_table_print(const hash_table_t *ht)
 			printf("'%s' : '%s'", tmp->key, tmp->value);
 			if (tmp->next != NULL)
 				printf(", ");
-				/*print the valy and key of the same position of the arrey*/
+				/*print the value and key of the same position of the array*/
 			tmp = tmp->next;
 		}
 		index++;
 	}
-	printf("}\n')");
+	printf("}\n");
 }
