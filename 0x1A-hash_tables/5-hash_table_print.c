@@ -30,6 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 		while (tmp)
 		{
 			printf("'%s' : '%s'", tmp->key, tmp->value);
+			/*check if it is a next node with data?*/
 			if (tmp->next != NULL)
 				printf(", ");
 				/*print the value and key of the same position of the array*/
